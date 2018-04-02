@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+			<meta charset="UTF-8">
+			<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+			<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<link rel="stylesheet" type="text/css" href="Registrar_Subject.css">
+		    <title>Subject</title>
+		    <link rel="icon" type="image/png" href="logooo.png" />
+		<style>
+			li {font-family: "Reitam"; font-size: 18px; 
+				font-weight: bold;}
+      label{font-family: "Raleway"; font-size: 15px;}
+      #Registrar_Subject td, #Registrar_Subject th 
+      {border: 1px solid black;}
+      #Registrar_Subject th { text-align: center;
+      background-color: #76a9d4; font-family: "Raleway"; 
+      font-weight: bold; color: black; font-size: 15px; }
+      #Registrar_Subject td { text-align: center; 
+      font-family: "Raleway"; font-weight: bold; font-size: 13px; color: black; }
+      #Registrar_Subject tr:hover { 
+         background-color: #c5d5e2;
+      }
+		</style>
+	</head>
+
+	<body>
+
+		    <section id="body" class="width">
+			<aside id="sidebar" class="column-left">
+			<header>
+				<img src="logo.png" > 
+
+				<h2>Welcome, <br>Lily Cruz!</h2>
+				
+			</header>
+
+			<nav id="mainnav">
+  				<ul>
+                            		<li><a href="Registrar_Profile.html">PROFILE</a></li>
+                           		 	<li class="selected-item"><a href="Registrar_Subject.html">SUBJECT</a></li>
+                            		<li><a href="Registrar_Room.html">ROOM</a></li>
+                            		<li><a href="Registrar_Curriculum.html">CURRICULUM</a></li>
+                            		<li><a href="Registrar_Students_List.html">STUDENT'S LIST</a></li>
+                            		<li><a href="#">LOG OUT</a></li>
+                        	</ul>
+			</nav>
+			
+		   	</div>
+			</aside>
+			<section id="content" class="column-right">
+
+	<article>
+
+			<h2 class="dashed">SUBJECTS</h2>
+
+           <fieldset>
+           <p>SORT BY:</p>
+            <div class="container-fluid">
+            <div class="dropdown"><div class="input-group-btn">
+                 <select class="form-control btn-default" data-ng-options="t.name for t in vm.types" data-ng-model="vm.object.type"/>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </select>
+                        <label form="Year">Section</label>
+                        </div>
+                        </div>
+
+        <div class="container-fluid">
+        <div class="dropdown2"><div class="input-group-btn">
+                 <select class="form-control btn-default" data-ng-options="t.name for t in vm.types" data-ng-model="vm.object.type"/>
+                           <option>2014-2015</option>
+                           <option>2015-2016</option>
+                           <option>2016-2017</option>
+                           <option>2017-2018</option>
+                        </select>
+                        <label form="Year">School Year</label>
+                        </div>
+                        </div>
+
+          <div class="container-fluid">
+        <div class="dropdown3"><div class="input-group-btn">
+                 <select class="form-control btn-default" data-ng-options="t.name for t in vm.types" data-ng-model="vm.object.type"/>
+                            <option>1</option>
+                            <option>2</option>
+
+                        </select>
+                        <label form="Year">Semester</label>
+                        </div>
+                        </div>
+
+          </fieldset>
+
+
+<div class="container-fluid">
+      <div class="row">
+      <div class="panel panel-danger">
+      <div class="table-responsive">
+      
+                <table class="table table-bordered header-fixed table-hover" 
+                id="Registrar_Subject">
+                  <thead>
+                    <tr>
+                      <th class="text-center col-sm-1">NO.</th>
+                      <th class="text-center col-sm-2">SUBJECT CODE</th>
+                      <th class="text-center col-sm-3">SUBJECT TITLE</th>
+                      <th class="text-center col-sm-1">NO. OF UNITS</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+            
+                  <td><output name="Number" for=""></output></td>
+                  <td><output name="Subject_Code" for=""></output></td>
+                  <td><output name="Subject_Title" for=""></output></td>
+                  <td><output name="Units" for=""></output></td>
+                  
+                    </tr>
+
+                    <tr>
+            
+                 <td><output name="Number" for=""></output></td>
+                  <td><output name="Subject_Code" for=""></output></td>
+                  <td><output name="Subject_Title" for=""></output></td>
+                  <td><output name="Units" for=""></output></td>
+
+                    </tr>
+
+                    <tr>
+            
+                 <td><output name="Number" for=""></output></td>
+                  <td><output name="Subject_Code" for=""></output></td>
+                  <td><output name="Subject_Title" for=""></output></td>
+                  <td><output name="Units" for=""></output></td>
+
+                    </tr>
+
+                    <tr>
+            
+                  <td><output name="Number" for=""></output></td>
+                  <td><output name="Subject_Code" for=""></output></td>
+                  <td><output name="Subject_Title" for=""></output></td>
+                  <td><output name="Units" for=""></output></td>
+
+                    </tr>
+
+                    <tr>
+            
+                 <td><output name="Number" for=""></output></td>
+                  <td><output name="Subject_Code" for=""></output></td>
+                  <td><output name="Subject_Title" for=""></output></td>
+                  <td><output name="Units" for=""></output></td>
+
+                    </tr>
+
+                    <tr>
+            
+                 <td><output name="Number" for=""></output></td>
+                  <td><output name="Subject_Code" for=""></output></td>
+                  <td><output name="Subject_Title" for=""></output></td>
+                  <td><output name="Units" for=""></output></td>
+
+                    </tr>
+
+                    <tr>
+            
+                  <td><output name="Number" for=""></output></td>
+                  <td><output name="Subject_Code" for=""></output></td>
+                  <td><output name="Subject_Title" for=""></output></td>
+                  <td><output name="Units" for=""></output></td>
+
+                    </tr>
+
+                    <tr>
+            
+                  <td><output name="Number" for=""></output></td>
+                  <td><output name="Subject_Code" for=""></output></td>
+                  <td><output name="Subject_Title" for=""></output></td>
+                  <td><output name="Units" for=""></output></td>
+
+                    </tr>
+
+                    <tr>
+            
+                 <td><output name="Number" for=""></output></td>
+                  <td><output name="Subject_Code" for=""></output></td>
+                  <td><output name="Subject_Title" for=""></output></td>
+                  <td><output name="Units" for=""></output></td>
+
+                    </tr>
+
+                    <tr>
+            
+                  <td><output name="Number" for=""></output></td>
+                  <td><output name="Subject_Code" for=""></output></td>
+                  <td><output name="Subject_Title" for=""></output></td>
+                  <td><output name="Units" for=""></output></td>
+
+                    </tr>
+
+                  </tbody>
+                </table>
+    </div>
+    </div>
+                   <a href="List_of_Students.html" class="button" role="button">SEE LIST OF STUDENTS ENROLLED</a>
+    </div>
+    </div>
+
+
+		</article>
+			
+			<footer class="clear">
+  
+              <p><label for="message"><br><br></label>
+              <img src="footer.png" class="img-responsive" >
+
+        <h3>&copy; 2018 WebDev. La Luna University by JAKKID CREATIVES</h3>
+      </footer>
+
+		</section>
+
+		<div class="clear"></div>
+
+	</section>
+	
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+			
+			
+
+
+		   	

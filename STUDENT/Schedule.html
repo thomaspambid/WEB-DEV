@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+			<meta charset="UTF-8">
+			<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+			<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<link rel="stylesheet" type="text/css" href="Schedule.css">
+		    <title>Schedule</title>
+		    <link rel="icon" type="image/png" href="logooo.png" />
+		<style>
+			li {font-family: "Reitam"; font-size: 18px; 
+				font-weight: bold;}
+			#List_Of_Schedules td, #List_Of_Schedules th {border: 1px solid black;}
+			#List_Of_Schedules th { text-align: center;
+				background-color: #76a9d4; 
+				font-family: "Raleway"; font-weight: bold; color: black; font-size: 15x; }
+			#List_Of_Schedules td { text-align: center; 
+				font-family: "Raleway"; font-size: 18px }
+			#List_Of_Schedules tr:hover { 
+				 background-color: #c5d5e2;}
+		</style>
+	</head>
+
+	<body>
+
+		    <section id="body" class="width">
+			<aside id="sidebar" class="column-left">
+			<header>
+				<img src="logo.png" > 
+
+				<h2>Welcome, <br>Kyle Pambid!</h2>
+				
+			</header>
+
+			<nav id="mainnav">
+  				<ul>
+                            		<li><a href="Student_Profile.html">PROFILE</a></li>
+                           		 	<li><a href="Registration.html">REGISTRATION</a></li>
+                           		 	<li class="selected-item"><a href="Schedule.html">SCHEDULE</a></li>
+                            		<li><a href="Grades.html">GRADES</a></li>
+                            		<li><a href="Curriculum.html">CURRICULUM</a></li>
+                            		<li><a href="#">LOG OUT</a></li>
+                        	</ul>
+			</nav>
+		   	</div>
+			</aside>
+			<section id="content" class="column-right">
+
+	<article>
+
+			<h2 class="dashed">SCHEDULE</h2>
+
+			
+			<div class="container-fluid">
+            <div class="panel-default custom">
+		    <div class="form-group">
+
+		    	<ul>  	
+		   		<li>Semester  :</li><output name="First_Name" for=""></output>
+		   		<li>School Year:</li><output name="middle_name" for=""></output>
+
+		    	</ul>
+
+		    </div>
+		   	</div>
+		   	</div>
+			<p>SORT BY:</p>
+		   	<div class="container-fluid">
+		 		<div class="dropdown">
+		 			<div class="input-group-btn">
+
+						<select class="form-control btn btn-default" data-ng-options="t.name for t in vm.types" data-ng-model="vm.object.type"/>
+   		 					<option>Subject ID</option>
+   		 					<option>Day</option>
+   		 					<option>Time</option>
+   		 					<option>All</option>
+   							</select>
+   							<label form="Year">Year</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+			<div class="row">
+			<div class="panel panel-danger">
+			<div class="table-responsive">
+
+			<script>
+				$('#List_Of_Schedules').on('click', '.clickable-row', function(event) {
+  					if($(this).hasClass('active')){
+    				$(this).removeClass('active'); 
+  					} else {
+    			$(this).addClass('active').siblings().removeClass('active');
+  					}
+					});
+			</script> 
+			
+			
+				        <table class="table table-striped table-bordered header-fixed table-hover " 
+				        id="List_Of_Schedules">
+				          <thead>
+				            <tr>
+				              <th class="text-center col-sm-1">NO.</th>
+				              <th class="text-center col-sm-2">SUBJECT ID
+				              </th>
+				              <th class="text-center col-sm-2">SUBJECT TITLE
+				              </th>
+				              <th class="text-center col-sm-1">SCHED TYPE</th>
+				              <th class="text-center col-sm-1">CREDITED UNITS</th>
+				              <th class="text-center col-sm-1">DAY/S</th>
+				              <th class="text-center col-sm-1">START TIME</th>
+				              <th class="text-center col-sm-1">END TIME</th>
+				              <th class="text-center col-sm-1">SECTION</th>
+				              <th class="text-center col-sm-1">ROOM</th>
+				            </tr>
+				          </thead>
+				          <tbody>
+				            <tr class="clickable-row">
+				    
+						      <td><output name="Number" for=""></output></td>
+						      <td><output name="Subject_ID" for=""></output></td>
+						      <td><output name="Subject_Title" for=""></output></td>
+						      <td><output name="Sched_Type" for=""></output></td>
+						      <td><output name="Credited_Units" for=""></output></td>
+						      <td><output name="Days" for=""></output></td>
+						      <td><output name="Start_Time" for=""></output></td>
+						      <td><output name="End_Time" for=""></output></td>
+						      <td><output name="Section" for=""></output></td>
+						      <td><output name="Room" for=""></output></td>
+				            </tr>
+ 
+				            <tr class="clickable-row">
+				           
+						     <td><output name="Number" for=""></output></td>
+						      <td><output name="Subject_ID" for=""></output></td>
+						      <td><output name="Subject_Title" for=""></output></td>
+						      <td><output name="Sched_Type" for=""></output></td>
+						      <td><output name="Credited_Units" for=""></output></td>
+						      <td><output name="Days" for=""></output></td>
+						      <td><output name="Start_Time" for=""></output></td>
+						      <td><output name="End_Time" for=""></output></td>
+						      <td><output name="Section" for=""></output></td>
+						      <td><output name="Room" for=""></output></td>
+				            </tr>
+
+				            <tr class="clickable-row">
+				           
+						     <td><output name="Number" for=""></output></td>
+						      <td><output name="Subject_ID" for=""></output></td>
+						      <td><output name="Subject_Title" for=""></output></td>
+						      <td><output name="Sched_Type" for=""></output></td>
+						      <td><output name="Credited_Units" for=""></output></td>
+						      <td><output name="Days" for=""></output></td>
+						      <td><output name="Start_Time" for=""></output></td>
+						      <td><output name="End_Time" for=""></output></td>
+						      <td><output name="Section" for=""></output></td>
+						      <td><output name="Room" for=""></output></td>
+				            </tr>
+
+				            <tr class="clickable-row">
+				           
+						     <td><output name="Number" for=""></output></td>
+						      <td><output name="Subject_ID" for=""></output></td>
+						      <td><output name="Subject_Title" for=""></output></td>
+						      <td><output name="Sched_Type" for=""></output></td>
+						      <td><output name="Credited_Units" for=""></output></td>
+						      <td><output name="Days" for=""></output></td>
+						      <td><output name="Start_Time" for=""></output></td>
+						      <td><output name="End_Time" for=""></output></td>
+						      <td><output name="Section" for=""></output></td>
+						      <td><output name="Room" for=""></output></td>
+				            </tr>
+
+				             <tr class="clickable-row">
+				           
+						     <td><output name="Number" for=""></output></td>
+						      <td><output name="Subject_ID" for=""></output></td>
+						      <td><output name="Subject_Title" for=""></output></td>
+						      <td><output name="Sched_Type" for=""></output></td>
+						      <td><output name="Credited_Units" for=""></output></td>
+						      <td><output name="Days" for=""></output></td>
+						      <td><output name="Start_Time" for=""></output></td>
+						      <td><output name="End_Time" for=""></output></td>
+						      <td><output name="Section" for=""></output></td>
+						      <td><output name="Room" for=""></output></td>
+				            </tr>
+
+				             <tr class="clickable-row">
+				           
+						     <td><output name="Number" for=""></output></td>
+						      <td><output name="Subject_ID" for=""></output></td>
+						      <td><output name="Subject_Title" for=""></output></td>
+						      <td><output name="Sched_Type" for=""></output></td>
+						      <td><output name="Credited_Units" for=""></output></td>
+						      <td><output name="Days" for=""></output></td>
+						      <td><output name="Start_Time" for=""></output></td>
+						      <td><output name="End_Time" for=""></output></td>
+						      <td><output name="Section" for=""></output></td>
+						      <td><output name="Room" for=""></output></td>
+				            </tr>
+
+				          </tbody>
+				        </table>
+		</div>
+		</div>
+		</div>
+		</div>
+		
+
+
+		</article>
+			
+			<footer class="clear">
+				<p><label for="message"><br><br></label>
+            	<img src="footer.png" class="img-responsive" >
+
+				<h3>&copy; 2018 WebDev. La Luna University by JAKKID CREATIVES</h3>
+			</footer>
+
+		</section>
+
+		<div class="clear"></div>
+
+	</section>
+	
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+			
+			
+
+
+		   	

@@ -1,0 +1,331 @@
+body{
+ 	margin:0px auto;
+	padding:0;
+	
+}
+* {
+	margin:0;
+	padding:0;
+}
+/** element defaults **/
+table {
+	width:100%;
+	text-align:left;
+}
+th, td {
+	padding:5px 10px;
+}
+th {
+	color:#fff;
+	border-top:1px solid #222;
+	background-color:#2F2F2F;
+}
+td {
+	border-bottom:1px solid #f4f4f4;
+}
+code, blockquote {
+	display:block;
+	border-left:5px solid #ddd;
+	padding:10px;
+	margin-bottom:20px;
+}
+p {
+	line-height:2.5em;
+	margin-top:20px;
+	font-family: "Reitam";
+	font-size: 18px;
+	color: black;
+} 
+.custom{
+  width:80%;
+  margin:0 auto;
+  min-width:350px;
+}
+.panel-default{
+	background-color: white;
+	border: 2px solid black;
+	height: 65px;
+	width: 100%;
+	margin-top: 20px;
+}
+.panel-default ul li{
+	display: inline-block;
+	font-family: "Raleway";
+	color: black;	
+	font-size: 16px;	
+	letter-spacing: 1px;
+	font-weight: bold;
+	right: 20px;	
+}
+.panel-danger{
+	margin-top: 30px;
+}
+a {
+	color:#e4bd35;
+
+}
+a:hover {
+	color:#be9402;
+}
+a:focus {
+	outline:none;
+}
+a.button { 
+    background-color: #be9402;
+    border: 3px solid black;
+    color: white;
+    font-weight: bold;
+    padding: 3px 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Reitam";
+    float: right;
+
+}
+a.button:hover {
+	background-color: #e4bd35;
+}
+a.button2 { 
+    background-color: #be9402;
+    border: 3px solid black;
+    color: white;
+    font-weight: bold;
+    padding: 3px 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Reitam";
+    float: right;
+
+}
+a.button2:hover {
+	background-color: #e4bd35;
+}
+.center-block{
+	float: none;
+}
+fieldset {
+	display:block;
+	border:none;
+	border-top:1px solid #e0e0e0;
+}
+fieldset legend {
+	font-weight:bold;
+	padding-right:10px;
+	color:#999;
+}
+fieldset form {
+	padding-top:15px;
+}
+fieldset p label {
+	float:left;
+	width:150px;
+	font-family: "Source Sans Pro","sans-serif";
+}
+fieldset form input, fieldset form select, fieldset form textarea {
+	padding:5px;
+	color:#333333;
+	font-size:13px;
+	font-family: "Source Sans Pro","sans-serif";
+	border:1px solid #ddd;
+}
+fieldset form input.formbutton {
+border:none;
+    background-color: #80B763;
+    border-radius: 5px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-weight: bold;
+    padding: 8px 22px;
+    font-size: 0.8em;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+h1 {
+	font-size:2.4em;
+}
+h2 {
+	color:#003366;
+	font-size:3.0em;
+	font-weight:bold;
+	padding:0 0 5px;
+	margin:0;
+	text-align: center;
+}
+h2.dashed {
+	border-style: dashed;
+	border-color: #003366;
+}
+h3 {
+	color:black;
+	font-size:1.2em;
+	font-family: "Raleway"
+	font-weight:bold;
+	margin:0;
+	text-align: center;
+}
+ul, ol {
+	margin:0 0 35px 35px;
+}
+li {
+	padding-bottom:5px;
+}
+/** wrapper **/
+div#wrapper {
+	margin:0px auto;
+	padding:0;
+}
+.width {
+	width:auto;
+	margin: 0 auto;
+}
+
+/** header **/
+header {
+	padding:30px 20px 30px;
+	margin:0 auto;
+}
+header h1 { 
+	text-align: center;
+}
+header img{
+	width: 100%;
+	height: auto;
+}
+header h2 {
+	color:white;
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: normal;
+	padding-bottom:0;
+	letter-spacing:0;
+	font-family: "Raleway"; 
+}
+
+/** body **/
+section#body {
+	padding: 0;
+	background:  #03396a;
+}
+
+/** content+sidebar styles **/
+section#content {
+	margin-left: 250px;
+	padding: 20px;
+	background-color: #c7ddf6;
+}
+
+.column-left {
+	float:left;
+}
+.column-right {
+	float:right;
+}
+aside#sidebar {
+	width:250px;
+	position: fixed;
+}
+nav#mainnav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+nav#mainnav li {
+	padding:0;
+	border-bottom: 1px solid #c7ddf6;
+	border-top: 1px solid #c7ddf6;
+	font-family: "Reitam"; 
+	font-size: 18px; 
+	font-weight: bold;
+}
+nav#mainnav li.selected-item  {
+	border-bottom:none;
+}
+nav#mainnav li.selected-item a,
+nav#mainnav li.selected-item a:hover {
+	color:#003366;
+	font-weight:bold;
+	background: #c7ddf6;
+}
+nav#mainnav li a:hover {
+	background: white;
+	color: #003366;
+	text-decoration:none;
+}
+nav#mainnav li a {
+	color: white;
+	display: block;
+	padding: 15px 17px;
+	text-align: left;
+	font-weight:  bold;
+	text-decoration: none;
+}
+
+
+/** clear fix **/
+.clear:after {
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clear {
+	clear: both;
+	display: inline-block;
+}
+.clear {
+	display: block;
+}
+
+@media screen and (max-width: 740px) {
+
+	body { font-size: 0.9em; }	
+
+
+	.width { width:auto; padding-left: 10px; padding-right: 10px; }
+
+	.column-left, .column-right { margin:0px; }
+
+	header h1, header h2, nav#mainnav li a { text-align:center; }
+	
+	section#content, aside#sidebar { position: relative; float: none; width: auto; margin-left: 0; }
+
+	
+}
+
+
+@media screen and (max-width: 540px) {
+
+	body { font-size: 0.8em; }
+
+	header, header h1 a, header h1 a:hover { text-align: center; padding: 10px 0 0 0; font-size: 1.1em; }
+
+
+	nav#mainnav ul li a { margin-top: 0; padding: 1em; }
+}
+.dropdown {
+	margin-top: -50px;
+	margin-left: 80px;
+	width:105px;
+	text-align: left;
+    font-family: "Reitam";
+    font-size: 18px;
+}
+.dropdown2 {
+	margin-top: -60px;
+	margin-left: 220px;
+	width:105px;
+	text-align: left;
+    font-family: "Reitam";
+    font-size: 18px;
+}
+.table-bordered {
+	border-collapse: collapse;
+}

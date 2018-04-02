@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+			<meta charset="UTF-8">
+			<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+			<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<link rel="stylesheet" type="text/css" href="Grades.css">
+		    <title>Grades</title>
+		    <link rel="icon" type="image/png" href="logooo.png" />
+		<style>
+			li {font-family: "Reitam"; font-size: 18px; 
+				font-weight: bold;}
+			label{font-family: "Raleway"; font-size: 15px;}
+			#List_Of_Schedules td, #List_Of_Schedules th {border: 1px solid black;}
+			#List_Of_Schedules th { text-align: center;
+				background-color: #76a9d4; 
+				font-family: "Raleway"; font-weight: bold; color: black; font-size: 15x; }
+			#List_Of_Schedules td { text-align: center;
+				font-family: "Raleway"; font-weight: bold; font-size: 18px }
+			#List_Of_Schedules tr:hover { 
+				 background-color: #c5d5e2;}
+		</style>
+	</head>
+
+	<body>
+
+		    <section id="body" class="width">
+			<aside id="sidebar" class="column-left">
+			<header>
+				<img src="logo.png" > 
+
+				<h2>Welcome, <br>Kyle Pambid!</h2>
+				
+			</header>
+
+			<nav id="mainnav">
+  				<ul>
+                            		<li><a href="Student_Profile.html">PROFILE</a></li>
+                           		 	<li><a href="Registration.html">REGISTRATION</a></li>
+                           		 	<li><a href="Schedule.html">SCHEDULE</a></li>
+                            		<li  class="selected-item"><a href="Grades.html">GRADES</a></li>
+                            		<li><a href="Curriculum.html">CURRICULUM</a></li>
+                            		<li><a href="#">LOG OUT</a></li>
+                        	</ul>
+			</nav>
+		   	</div>
+			</aside>
+			<section id="content" class="column-right">
+
+	<article>
+
+			<h2 class="dashed">GRADES</h2>
+
+			<p>SORT BY:</p>
+		   	<div class="container-fluid">
+            <div class="dropdown"><div class="input-group-btn">
+                 <select class="form-control btn-default" data-ng-options="t.name for t in vm.types" data-ng-model="vm.object.type"/>
+                            <option>2017</option>
+                            <option>2018</option> 
+                        </select>
+                        <label form="Year">School Year</label>
+                        </div>
+                        </div>
+			</div>
+
+				<div class="container-fluid">
+		 		<div class="dropdown2"><div class="input-group-btn">
+                 <select class="form-control btn-default" data-ng-options="t.name for t in vm.types" data-ng-model="vm.object.type"/>
+                            <option>1</option>
+                            <option>2</option> 
+                        </select>
+                        <label form="Year">Semester</label>
+                        </div>
+                        </div>
+			</div>
+
+			<div class="container-fluid">
+            <div class="panel-default custom">
+		    <div class="form-group">
+
+		    	<ul>  	
+		   		<li>GPA:</li><output name="User_Id" for=""></output>
+		   		<li>School Year:</li><output name="middle_name" for=""></output>
+
+		    	</ul>
+
+		    </div>
+		   	</div>
+		   	</div>
+
+			<div class="container-fluid">
+			<div class="row">
+			<div class="panel panel-danger">
+			<div class="table-responsive">
+			
+				        <table class="table table-striped table-bordered header-fixed table-hover" 
+				        id="List_Of_Schedules">
+				          <thead>
+				            <tr>
+				              <th class="text-center col-sm-1">NO.</th>
+				              <th class="text-center col-sm-2">SUBJECT ID</th>
+				              <th class="text-center col-sm-2">SUBJECT TITLE</th>
+				              <th class="text-center col-sm-1">UNITS</th>
+				              <th class="text-center col-sm-1">SECTION ID</th>
+				              <th class="text-center col-sm-1">FINAL GRADE</th>
+				              <th class="text-center col-sm-1">GRADE STATUS</th>
+				            </tr>
+				          </thead>
+				          <tbody>
+				            <tr>
+				    
+						      <td><output name="Number" for=""></output></td>
+						      <td><output name="Subject_ID" for=""></output></td>
+						      <td><output name="Subject_Title" for=""></output></td>
+						      <td><output name="Units" for=""></output></td>
+						      <td><output name="Section_ID" for=""></output></td>
+						      <td><output name="Final_Grade" for=""></output></td>
+						      <td><output name="Grade_Status" for=""></output></td>
+						     
+				            </tr>
+
+				             <tr>
+				    
+						      <td><output name="Number" for=""></output></td>
+						      <td><output name="Subject_ID" for=""></output></td>
+						      <td><output name="Subject_Title" for=""></output></td>
+						      <td><output name="Units" for=""></output></td>
+						      <td><output name="Section_ID" for=""></output></td>
+						      <td><output name="Final_Grade" for=""></output></td>
+						      <td><output name="Grade_Status" for=""></output></td>
+						     
+				            </tr>
+				             <tr>
+				    
+						      <td><output name="Number" for=""></output></td>
+						      <td><output name="Subject_ID" for=""></output></td>
+						      <td><output name="Subject_Title" for=""></output></td>
+						      <td><output name="Units" for=""></output></td>
+						      <td><output name="Section_ID" for=""></output></td>
+						      <td><output name="Final_Grade" for=""></output></td>
+						      <td><output name="Grade_Status" for=""></output></td>
+						     
+				            </tr>
+
+				             <tr>
+				    
+						      <td><output name="Number" for=""></output></td>
+						      <td><output name="Subject_ID" for=""></output></td>
+						      <td><output name="Subject_Title" for=""></output></td>
+						      <td><output name="Units" for=""></output></td>
+						      <td><output name="Section_ID" for=""></output></td>
+						      <td><output name="Final_Grade" for=""></output></td>
+						      <td><output name="Grade_Status" for=""></output></td>
+						     
+				            </tr>
+
+				              <tr>
+				    
+						      <td><output name="Number" for=""></output></td>
+						      <td><output name="Subject_ID" for=""></output></td>
+						      <td><output name="Subject_Title" for=""></output></td>
+						      <td><output name="Units" for=""></output></td>
+						      <td><output name="Section_ID" for=""></output></td>
+						      <td><output name="Final_Grade" for=""></output></td>
+						      <td><output name="Grade_Status" for=""></output></td>
+						     
+				            </tr>
+
+				              <tr>
+				    
+						      <td><output name="Number" for=""></output></td>
+						      <td><output name="Subject_ID" for=""></output></td>
+						      <td><output name="Subject_Title" for=""></output></td>
+						      <td><output name="Units" for=""></output></td>
+						      <td><output name="Section_ID" for=""></output></td>
+						      <td><output name="Final_Grade" for=""></output></td>
+						      <td><output name="Grade_Status" for=""></output></td>
+						     
+				            </tr>
+				          </tbody>
+				        </table>
+		</div>
+		</div>
+		</div>
+		</div>
+
+	
+		</article>
+			
+			<footer class="clear">
+				<p><label for="message"><br><br><br></label>
+            	<img src="footer.png" class="img-responsive" >
+
+				<h3>&copy; 2018 WebDev. La Luna University by JAKKID CREATIVES</h3>
+			</footer>
+
+		</section>
+
+		<div class="clear"></div>
+
+	</section>
+	
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+			
+			
+
+
+		   	
